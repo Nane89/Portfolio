@@ -26,6 +26,7 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
+    font-weight: 300;
   }
   &.md-heading {
     font-size: 1.7em;
@@ -72,7 +73,14 @@ header {
 
 .text-secondary {
   color: $secondary-color;
-}
+  font-weight: 500;
+    }
+    .h1{
+      margin: 20px auto;
+      font-size: 50px;
+      font-weight:500;
+
+    }
 
 main {
   padding: 4rem;
@@ -101,7 +109,7 @@ main {
 }
 .padingDate{
   margin-left:-1em;
-  color: rgb(51, 51, 51);
+  color: rgb(173, 173, 173);
   font-size: 18px;
   
 }
@@ -150,9 +158,9 @@ main {
   }
 
   .job {
-    background: lighten($tercial-color, 93);
+    background: lighten($primary-color, 30);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $secondary-color 3px solid;
   }
 }
 
@@ -162,6 +170,10 @@ main {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
   border: 1px;
+
+    
+  }
+
 
   img {
     width: 100%;
@@ -174,7 +186,9 @@ main {
       @include easeOut;
     }
   }
-}
+  .p{
+    font-size:2.1rem;
+    margin: 2px 0px 2px 0px;}
 
 // Contact Page
 .boxes {

@@ -13,6 +13,7 @@
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
+    
   }
 
   // Rotate Into X With Menu Lines
@@ -43,8 +44,9 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
+  
 
   &.show {
     visibility: visible;
@@ -52,23 +54,27 @@
 
   &-branding,
   &-nav {
+    
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     float: left;
     width: 50%;
     height: 100vh;
     overflow: hidden;
+    
+    
   }
 
   &-nav {
     margin: 0;
-    padding: 0;
-    background: darken($primary-color, 5);
+    padding-left: 3em;
+    background: darken($primary-color, 20);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
+   
 
     &.show {
       // Slide in from top
@@ -81,6 +87,10 @@
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
+    opacity: 1;
+    padding-left: 4em;
+    
+    
 
     &.show {
       // Slide in from bottom
@@ -96,14 +106,21 @@
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
+    
+    
+    
+    
 
     &.show {
       // Slide in from right
       transform: translate3d(0, 0, 0);
+      
+      
     }
 
     &.current > a {
       color: $secondary-color;
+      
     }
   }
 
@@ -120,6 +137,7 @@
 
     &:hover {
       color: $secondary-color;
+    
     }
   }
 }
